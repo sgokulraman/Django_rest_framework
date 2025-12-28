@@ -8,3 +8,8 @@ class Todo(models.Model):
     to_completed = models.BooleanField(default=False)
     def __str__(self):
         return self.title
+    
+    
+class Task(models.Model):
+    task_name = models.CharField(max_length=200)
+    description = models.TextField()
