@@ -6,3 +6,9 @@ class Task_Serializer(ModelSerializer):
         
         model = models.Task
         fields = "__all__"
+        
+class Result_serializer(ModelSerializer):
+    class Meta:
+        model = models.Ranklist
+        
+        fields = "__all__"
